@@ -1,0 +1,16 @@
+# Build output
+/out/
+
+# Signing material — never commit a keystore
+/keystore/
+*.keystore
+*.jks
+
+# Built artifacts
+*.apk
+*.idsig
+*.dex
+
+# Local scratch
+*.log
+*-state.txt
