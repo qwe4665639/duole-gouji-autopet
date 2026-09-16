@@ -86,7 +86,15 @@ duole-gouji-autopet/
 
 ## 使用步骤
 
-### 1. 编译
+### 0. 直接装现成的包（可选）
+
+不想自己编译，就去 [Releases](https://github.com/qwe4665639/duole-gouji-autopet/releases) 下载 `autopet-2.1.apk`。
+
+> ⚠️ 发布的 APK 用**调试密钥**签名（`CN=Android Debug`），且签名与旧版不同，所以**必须先卸载已有版本**再装：
+> `adb uninstall com.dagong.autopet` → `adb install -r autopet-2.1.apk`。
+> 装完仍需要按下面第 3 步开启无障碍服务。
+
+### 1. 自己编译
 
 需要一个 Android SDK（`build-tools 34.0.0` + `platforms/android-34`）和 JDK 17，**不需要 Gradle、不需要联网**。
 
@@ -239,4 +247,4 @@ A：窗口 flags 里带了 `FLAG_NOT_TOUCHABLE`（`0x10`）就会这样——事
 
 ## 许可
 
-未指定许可证。如需开源授权请补充 `LICENSE`。
+[MIT](LICENSE)。
